@@ -9,8 +9,8 @@
 ---------------------------------------------------*/
 
 html {
-    background-color: aliceblue;
-    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 body {
@@ -37,12 +37,24 @@ body {
     width: 100%;
     height: 100%;
     text-decoration: none;
+    color: white;
+}
+
+.button_black a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
 }
 
 h2, h3, h4, p {
     margin: 1vh 5vw 1vh 5vw;
 }
 
+small {
+    font-size: 0.7em;
+}
 
 /*---------------------------------------------------
 5. Element specific styles
@@ -53,7 +65,7 @@ h2, h3, h4, p {
 
 #header {
     width: 100vw;
-    background-color: darkgrey;
+    background-color: #223249;
     margin-bottom: 3%;
 }
 
@@ -86,8 +98,16 @@ h2, h3, h4, p {
 /*Icons*/
 
 .arrow {
+    height: 0.7em;
+}
+
+.location_icon {
     height: 1em;
-    background-color: darkgrey;
+}
+
+.icon {
+    position: absolute;
+    right: 7vw;
 }
 
 
@@ -121,7 +141,12 @@ h2, h3, h4, p {
     width: 10vh;
     height: 10vh;
     border-radius: 1000px;
-    background-color: lightpink;
+    background-color: #223249;
+}
+
+.contact_img img {
+    width: 50%;
+    margin: 25% 0 0 25%;
 }
 
 /*---------------------------------------------------
@@ -130,45 +155,76 @@ h2, h3, h4, p {
 
 /*Schedule and lessons*/
 
-.schedule_lesson {
+.block {
     display: inline-block;
-    background-color: aquamarine;
     width: 100%;
+    margin: 1% 0;
+    padding: 2% 0;
+}
+
+.block p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.schedule_lesson_light {
+    background-color: #8ED2C9;
+    color: white;
+}
+
+.schedule_lesson_dark {
+    background-color: #00AAA0;
+    color: white;
 }
 
 .schedule_assignment {
-    display: inline-block;
-    background-color: #ff3837;
-    width: 100%;
+    background-color: #EB6D64;
+    color: white;
+}
+
+.schedule_break {
+    background-color: #2e73c1;
+    color: white;
 }
 
 .schedule_document {
     display: flex;
-    background-color: lightskyblue;
+    background-color: #EFEFEF;
     width: 100%;
 }
 
 .schedule_date {
     text-align: center;
+    color: #EB6D64;
 
 }
 
-.document_placeholder {
+.document_icon {
     display: inline-block;
-    background-color: blueviolet;
+    background-color: #BABABA;
     height: 13vh;
-    min-width: 13vh;
+    min-width: 14vh;
+    color: #223249;
+}
+
+.document_icon img {
+    height: 50%;
+    margin: 25% 0 0 25%;
 }
 
 .document_text {
-    margin-left: -2vw;
+    margin: 1vh 0 1vh -2vw;
 }
 
 .location {
-    display: inline-block;
-    background-color: floralwhite;
-    width: 100%;
-    border: 1px solid navajowhite;
+    background-color: #efefef;
+    border-radius: 1000px;
+}
+
+.location_text {
+    background-color: #efefef;
+    border-radius: 1000px;
 }
 
 /*Login page and forgotten password*/
@@ -241,7 +297,7 @@ input[type=submit] {
 #overview {
     align-items: center;
 
-}}
+}
 
 /*--Afleveringer--*/
 .assignment {
