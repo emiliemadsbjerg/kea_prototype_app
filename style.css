@@ -48,12 +48,24 @@ body {
     color: black;
 }
 
-h2, h3, h4, p {
+h2, h3, h4, p, .dim_text {
     margin: 1vh 5vw 1vh 5vw;
+    font-weight: normal;
 }
 
 small {
     font-size: 0.7em;
+}
+
+.dim_text {
+    opacity: 0.5;
+}
+
+.read_more {
+    width: 95%;
+    text-align: right;
+    font-weight: bold;
+    margin: 2vh auto;
 }
 
 /*---------------------------------------------------
@@ -118,6 +130,7 @@ small {
     border: 1px solid black;
     width: 80%;
     margin: 3% 0% 3% 10%;
+    background-color: pink;
 }
 
 
@@ -152,6 +165,13 @@ small {
 /*---------------------------------------------------
 3. Page specific styles
 ---------------------------------------------------*/
+
+/*Front page*/
+
+.news_divider {
+    width: 90%;
+    margin: 2vh auto;
+}
 
 /*Schedule and lessons*/
 
