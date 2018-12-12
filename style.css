@@ -221,3 +221,139 @@ input[type=submit] {
     margin: 0;
     padding: 5%;
 }
+
+/*---------Assignment Overview------------*/
+
+.selectbox {
+    display: inherit;
+    height: 12vw;
+    width: 73vw;
+
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 10vw;
+
+    padding: 4vw;
+    margin: 5vw;
+}
+
+
+#overview {
+    align-items: center;
+
+}}
+
+/*--Afleveringer--*/
+.assignment {
+    display: inherit;
+    height: 9vw;
+    width: 75vw;
+
+    text-align: center;
+    border: 1px solid grey;
+    font-size: 4vw;
+
+    padding: 1.3vw;
+    margin: 2vw;
+}
+
+
+/*--Aflevering 04.01.01--*/
+.container {
+    margin: 10%;
+    padding: 10%;
+}
+
+.applieddate {
+    display: inherit;
+    border: 1px dashed grey;
+
+    margin: 1%;
+}
+
+
+/*Øverstebox*/
+.assignmentbar {
+    display: inherit;
+    height: 20vw;
+    width: 90vw;
+
+    border: 1px solid grey;
+
+    padding: 0.5%;
+    margin: 5%;
+}
+
+.appliedby {
+    display: inherit;
+    border: 1px solid grey;
+}
+
+.applied {}
+
+.statusbar {
+    display: inherit;
+    border: 1px solid grey;
+}
+
+.status {}
+
+.feedbackbox {
+    display: inherit;
+    height: 70vw;
+    width: 90vw;
+
+    border: 1px solid grey;
+
+    padding: 0.5%;
+    margin: 5%;
+}
+
+.feedback {
+    display: inherit;
+    border: 1px solid grey;
+}
+
+.feedbacktext {
+    display: inherit;
+    height: 185px;
+
+    border: 1px solid grey;
+}
+
+.correctedbox {
+    display: flex;
+    height: 15vw;
+
+    border: 1px solid grey;
+    align-items: column;
+}
+
+.correctedtext {
+    display: inherit;
+    width: 50px;
+
+    border: 1px solid grey;
+    text-align: left;
+
+    padding: inherit;
+    margin: inherit;
+}
+
+.correctedby {
+    display: inherit;
+    width: 10vw;
+
+    border: 1px solid grey;
+}
+
+.correctedbyicon {
+    display: inherit;
+    height: 12vw;
+    width: 12vw;
+
+    border: 1px solid grey;
+    border-radius: 100vw;
+}
+
+/*---------Assignment Overview END------------*/
