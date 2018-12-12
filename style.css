@@ -13,6 +13,12 @@ html {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.blue_background {
+    background-color: #223249;
+    background-size: repeat;
+    height: 100vh;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -68,6 +74,10 @@ small {
     margin: 2vh auto;
 }
 
+.hidden {
+    display: none;
+}
+
 /*---------------------------------------------------
 5. Element specific styles
 ---------------------------------------------------*/
@@ -78,7 +88,6 @@ small {
 #header {
     width: 100vw;
     background-color: #223249;
-    margin-bottom: 3%;
 }
 
 #header_container {
@@ -103,8 +112,34 @@ small {
     text-align: center;
 }
 
+.header_title {
+    text-align: center;
+    color: white;
+    margin-top: 0.2vh;
+    font-size: 3.5vh;
+}
+
 .header_menu {
     text-align: right;
+}
+
+/*Chat header*/
+
+#chat_header {
+    width: 100vw;
+    background-color: #2D415F;
+    margin-bottom: 3%;
+    margin-top: -1%;
+}
+
+#chat_header_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+#chat_header img {
+    height: 4vh;
 }
 
 /*Icons*/
@@ -140,6 +175,12 @@ small {
     display: flex;
 }
 
+.contact_row_centered {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -162,9 +203,41 @@ small {
     margin: 25% 0 0 25%;
 }
 
+.active_line {
+    margin: 0 33%;
+    padding: 0;
+    width: 30%;
+}
+
 /*---------------------------------------------------
 3. Page specific styles
 ---------------------------------------------------*/
+
+/*Burger menu*/
+
+#burger_menu {
+    background-color: #223249;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    padding-top: 13vh;
+}
+
+#burger_menu hr {
+    width: 50%;
+    margin: 2vh auto;
+}
+
+.menu_link a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
 
 /*Front page*/
 
@@ -229,8 +302,8 @@ small {
 }
 
 .document_icon img {
-    height: 50%;
-    margin: 25% 0 0 25%;
+    height: 70%;
+    margin: 15%;
 }
 
 .document_text {
@@ -258,12 +331,16 @@ small {
     margin: 0 15%;
 }
 
-.login_bottom {
+.page_bottom {
     width: 100%;
     text-align: center;
     position: fixed;
     bottom: 0;
 }
+
+.page_bottom a {
+    text-decoration: none;
+    color: white;}
 
 .uni_login {
     width: 90%;
@@ -297,6 +374,7 @@ input[type=submit] {
     margin: 0;
     padding: 5%;
 }
+
 
 /*---------Assignment Overview------------*/
 
@@ -433,3 +511,180 @@ input[type=submit] {
 }
 
 /*---------Assignment Overview END------------*/
+
+/*---------Aflevering single view-------------*/
+
+
+.aflevering_singleview {
+    background-color: #eaeaea;
+    color: #EB6D64;
+    display: flex;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000px;
+    width: 50vw;
+
+
+}
+
+.clock {
+    height: 7vw;
+    width: 7vw;
+    display: flex;
+    margin: 0.6vw 0.6vw 0vw 0.9vw;
+
+
+}
+
+.afleverings_dato {
+    display: flex;
+    font-size: 5vw;
+
+
+
+}
+
+.upload_dokument {
+    background-color: #8ED2C9;
+    color: white;
+    display: flex;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000px;
+    width: 44vw;
+
+
+
+}
+
+.upload_icon {
+    height: 7.5vw;
+    width: 7.5vw;
+    display: flex;
+    margin: 1vw 0.8vw 0vw 0.9vw;
+}
+
+.upload_tekst {
+    display: flex;
+
+
+}
+
+.aflever_knap {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.tilfoej_flere {}
+
+/*---------Aflevering single view end---------*/
+
+.top_tekst {
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+/*---------Afleverings sider ---------*/
+
+
+.assignment_blocks {
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+.assignment_light {
+    background-color: #F29D96;
+    padding: 10vw 0.1vw 10vw 0.1vw;
+
+}
+
+.assignment_dark {
+    background-color: #EB6D64;
+    padding: 10vw 0.1vw 10vw 0.1vw;
+
+}
+
+.aflevering_3 {
+    text-align: left;
+    padding: 4vw 4vw 4vw 4vw;
+
+
+
+
+}
+
+#aflevering3 {
+    padding: 1vw;
+
+
+}
+
+.lup_icon1 {
+    position: absolute;
+    left: 360px;
+    top: 146px;
+}
+
+.lup_icon2 {
+    position: absolute;
+    left: 360px;
+    top: 233px;
+}
+
+.lup_icon3 {
+    position: absolute;
+    left: 360px;
+    top: 318px;
+}
+
+.lup_icon4 {
+    position: absolute;
+    left: 360px;
+    top: 408px;
+}
+
+.lup_icon5 {
+    position: absolute;
+    left: 360px;
+    top: 493px;
+}
+
+#check_icon {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+}
+
+.check_icon1 {
+    left: 345px;
+    top: 263px
+}
+
+.check_icon2 {
+    left: 345px;
+    top: 350px;
+}
+
+.check_icon3 {
+    left: 345px;
+    top: 438px;
+}
+
+.check_icon4 {
+    left: 345px;
+    top: 526px;
+}
+
+
+
+
+
+
+
+
+
+/*---------Afleverings sider end---------*/
