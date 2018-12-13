@@ -13,9 +13,13 @@ html {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.read_more a {
+    text-decoration: none;
+    color: white;
+}
+
 .blue_background {
     background-color: #223249;
-    background-size: repeat;
     height: 100vh;
 }
 
@@ -115,8 +119,8 @@ small {
 .header_title {
     text-align: center;
     color: white;
-    margin-top: 0.2vh;
-    font-size: 3.5vh;
+    margin-top: 0.8vh;
+    font-size: 2.5vh;
 }
 
 .header_menu {
@@ -144,6 +148,11 @@ small {
 
 /*Icons*/
 
+.arrow_back {
+    height: 3vh;
+    margin-top: 1vh;
+}
+
 .arrow {
     height: 0.7em;
 }
@@ -155,6 +164,7 @@ small {
 .icon {
     position: absolute;
     right: 7vw;
+    width: 1.2em;
 }
 
 
@@ -184,7 +194,7 @@ small {
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     width: 10vh;
     margin-right: 1vh;
 }
@@ -200,7 +210,7 @@ small {
 
 .contact_img img {
     width: 50%;
-    margin: 25% 0 0 25%;
+    margin: 25% 0 0 0;
 }
 
 .active_line {
@@ -307,6 +317,7 @@ small {
 }
 
 .document_text {
+    font-size: 1rem;
     margin: 1vh 0 1vh -2vw;
 }
 
@@ -351,12 +362,33 @@ small {
     border-radius: 1000px;
 }
 
+.uni_login a {
+    color: black;
+}
+
 .login_image {
     display: inline-block;
     width: 100%;
     height: 30vh;
+    margin-top: 3vh;
     background-color: cadetblue;
     margin-bottom: 8vh;
+}
+
+.login_image img {
+    width: 100%;
+}
+
+.password_image {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+.password_image img {
+    width: 50%;
 }
 
 input {
@@ -480,7 +512,6 @@ input[type=submit] {
     height: 15vw;
 
     border: 1px solid grey;
-    align-items: column;
 }
 
 .correctedtext {
@@ -521,14 +552,13 @@ input[type=submit] {
     display: flex;
     box-shadow: 0 8px 10px -3px #d0d0d0;
     border-radius: 1000px;
-    width: 50vw;
+    width: 60vw;
 
 
 }
 
 .clock {
-    height: 7vw;
-    width: 7vw;
+    height: 4vh;
     display: flex;
     margin: 0.6vw 0.6vw 0vw 0.9vw;
 
@@ -537,7 +567,7 @@ input[type=submit] {
 
 .afleverings_dato {
     display: flex;
-    font-size: 5vw;
+    font-size: 1.2em;
 
 
 
@@ -549,6 +579,7 @@ input[type=submit] {
     display: flex;
     box-shadow: 0 8px 10px -3px #d0d0d0;
     border-radius: 1000px;
+    height: 7vh;
     width: 44vw;
 
 
@@ -556,10 +587,13 @@ input[type=submit] {
 }
 
 .upload_icon {
-    height: 7.5vw;
-    width: 7.5vw;
-    display: flex;
-    margin: 1vw 0.8vw 0vw 0.9vw;
+    margin: 5% 6vw 0 2vw;
+}
+
+.icon_left {
+    position: absolute;
+
+    height: 4%;
 }
 
 .upload_tekst {
@@ -568,13 +602,6 @@ input[type=submit] {
 
 }
 
-.aflever_knap {
-    display: flex;
-    justify-content: space-between;
-
-
-
-}
 
 .tilfoej_flere {}
 
@@ -596,6 +623,17 @@ input[type=submit] {
 
 }
 
+.aflevering_tekst {
+    text-align: center;
+}
+
+.assignment_blocks_left {
+    color: white;
+    font-size: 5vw;
+    text-align: left;
+
+}
+
 .assignment_light {
     background-color: #F29D96;
     padding: 10vw 0.1vw 10vw 0.1vw;
@@ -608,16 +646,8 @@ input[type=submit] {
 
 }
 
-.aflevering_3 {
-    text-align: left;
-    padding: 4vw 4vw 4vw 4vw;
 
-
-
-
-}
-
-#aflevering3 {
+.aflevering3 {
     padding: 1vw;
 
 
@@ -680,11 +710,199 @@ input[type=submit] {
 }
 
 
-
-
-
-
-
-
-
 /*---------Afleverings sider end---------*/
+
+/*---------Assignment Overview END------------*/
+
+/*---------Chatroom------------*/
+
+.chattypebox {
+    border: 1px solid grey;
+    height: 25vw;
+
+}
+
+.chattitel {
+    display: flex;
+    height: 10vw;
+    text-align: center;
+}
+
+.chattitel h2 {
+    padding: 1vw;
+    align-self: center;
+    margin: 2vw 31vw;
+}
+
+/*Chat Messages*/
+
+.chatbox h3 {
+    font-size: 4vw;
+    color: #5b5b5b;
+}
+
+.chatroom a {
+    width: 10vw;
+    height: 10vw;
+
+}
+
+.monday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.tuesday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.thursday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.friday {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.today {
+    text-align: center;
+    margin: 2.5vw;
+}
+
+.reciever {
+    width: 70vw;
+}
+
+.sender {
+    width: 70vw;
+    margin-left: 26vw;
+}
+
+.chatmessage {
+    box-shadow: 0 8px 10px -3px #929292;
+
+    margin: 4vw;
+    padding: 1vw;
+    border-radius: 5vw;
+}
+
+.chatcontainer {
+    margin-bottom: 20vh;
+}
+
+.reciever .chatmessage {
+    background-color: #e7e7e7;
+}
+
+.sender .chatmessage {
+    background-color: darkturquoise;
+}
+
+.chatmessage p {
+    margin: 1vw;
+    color: white;
+}
+
+.messagedate {
+    margin-left: 40vw;
+    font-size: 3vw;
+}
+
+.reciever .messagedate p {
+    color: darkgrey;
+}
+
+.sender .messagedate p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*Chat Messages END*/
+
+/*Chat Typing*/
+
+.chattypebox {
+    background-color: #233a56;
+    height: 17vh;
+    width: 100%
+}
+
+.chattypetext input[type=text] {
+    height: 5vw;
+    width: 80vw;
+    border-radius: 3vw;
+
+    margin: auto;
+    margin-top: 2.5vw;
+    margin-left: 3vw;
+    background-color: #2f4968;
+}
+
+.chatbuttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatroomsend input[type=submit] {
+    height: 7vw;
+    width: 19vw;
+    border-radius: 2vw;
+
+    background-color: #2f4968;
+    margin-right: 4.5vw;
+    margin-top: 1.5vw;
+}
+
+.chatroomsend p {
+    color: white;
+}
+
+.chaticons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5vw;
+}
+
+.chatroomicon {
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+
+    margin-right: 7vw;
+    cursor: pointer;
+}
+
+/*Chat Typing END*/
+
+/*-------Chatroom END----------*/
+
+
+/*stefans nmapper*/
+
+.aflever_knap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aflever_knap button{
+    display: flex;
+    color: white;
+    padding: 2vh;
+    background-color: #8ED2C9;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000px;
+    width: 40vw;
+    border: none;
+
+}
+
+.button_text {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.stefanscircle{
+    width: 20px;
+}

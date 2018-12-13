@@ -4,6 +4,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="57x57" href="elements/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="elements/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="elements/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="elements/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="elements/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="elements/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="elements/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="elements/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="elements/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="elements/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="elements/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="elements/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="elements/favicon/favicon-16x16.png">
+	<link rel="manifest" href="elements/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="elements/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<title>KEA</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -12,11 +29,13 @@
 	<header>
 		<div id="header">
 			<div id="header_container">
-				<div class="header_img header_logo">
-					<img src="elements/header_logo.png">
+				<div class="header_img header_logo button">
+					<a href="forside.html">
+						<img src="elements/header_logo.png">
+					</a>
 				</div>
 				<div class="header_img header_title">
-					LEKTION
+					AFLEVERINGER
 				</div>
 				<div class="header_img header_menu">
 					<img src="elements/burger_menu.png">
@@ -75,82 +94,95 @@
 		</div>
 	</section>
 
-	<div id="container">
-		<a href="assignment_2.html">Tilbage (HER SKAL OGSÅ VÆRE ET IKON)</a>
+
+	<main class="content padded">
+		<div class="schedule_month button_black">
+			<a href="assignment_2.html">
+				<img src="elements/arrow_back_red.png" class="arrow_back">
+
+			</a>
+		</div>
 
 		<div class="top_tekst">
 			<p>Afleveringer</p>
 		</div>
 
 
-		<div class="assignment_blocks">
+		<div class="assignment_blocks_left">
 			<div class="aflevering_3">
 
-				<div class="assignment_dark block rounded button" id="aflevering3">
-					<p>Aflevering 04.04.02 </p><br>
-					<p><small>Tema dokumentation</small></p>
+				<div class="assignment_dark block rounded button aflevering3">
+					<a href="aflevering_site.html">
+						<img src="elements/lup.svg" class="icon">
+						<p>Aflevering 04.04.02 </p><br>
+						<p><small>Tema dokumentation</small></p>
+					</a>
+				</div>
+				<div class="assignment_light block rounded button aflevering3">
+					<a href="aflevering_site.html">
+						<img src="elements/lup.svg" class="icon">
+						<p>
+							Aflevering 04.03.01
 
-					<img src="elements/lup.svg" alt="lup icon" class="lup_icon1">
-				</div> <a href="aflevering_site.html" class="assignment_light block rounded button" id="aflevering3">
-				<p>
-					Aflevering 04.03.01
+						</p><br>
+						<img src="elements/check.svg" class="icon">
 
-				</p><br>
-
-				<p><small>
-					Web prototype
-				</small></p>
-				<img src="elements/lup.svg" alt="lup icon" class="lup_icon2">
-
-				<img src="elements/check.svg" alt="check icon" id="check_icon" class="check_icon1">
-
-			</a>
-
-				<div class="assignment_dark block rounded button" id="aflevering3">
+						<p><small>
+							Web prototype
+						</small></p>
 
 
-					<p>
-						Aflevering 04.02.01
-					</p><br>
-					<p><small>
-						Design Sprint
-					</small></p>
-					<img src="elements/lup.svg" alt="lup icon" class="lup_icon3">
-					<img src="elements/check.svg" alt="check icon" id="check_icon" class="check_icon2">
+
+					</a></div>
+
+				<div class="assignment_dark block rounded button aflevering3">
+
+					<a href="aflevering_site.html">
+						<img src="elements/lup.svg" class="icon">
+						<p>
+							Aflevering 04.02.01
+						</p><br>
+
+						<img src="elements/check.svg" class="icon">
+						<p><small>
+							Design Sprint
+						</small></p>
+					</a>
 
 				</div>
-				<div class="assignment_light  block rounded button" id="aflevering3">
+				<div class="assignment_light  block rounded button aflevering3">
+					<a href="aflevering_site.html">
+						<img src="elements/lup.svg" class="icon">
 
+						<p>
+							Aflevering 04.01.02
+						</p><br>
+						<img src="elements/check.svg" class="icon">
+						<p><small>
+							User research (0.1)
+						</small></p>
 
-					<p>
-						Aflevering 04.01.02
-					</p><br>
-					<p><small>
-						User research (0.1)
-					</small></p>
-
-					<img src="elements/lup.svg" alt="lup icon" class="lup_icon4">
-					<img src="elements/check.svg" alt="check icon" id="check_icon" class="check_icon3">
+					</a>
 				</div>
-				<div class="assignment_dark block rounded button" id="aflevering3">
+				<div class="assignment_dark block rounded button aflevering3">
+					<a href="aflevering_site.html">
+						<img src="elements/lup.svg" class="icon">
 
-
-					<p>
-						Aflevering 04.01.01
-					</p>
-					<br>
-					<p><small>
-						User brief
-					</small></p>
-					<img src="elements/lup.svg" alt="lup icon" class="lup_icon5">
-					<img src="elements/check.svg" alt="check icon" id="check_icon" class="check_icon4">
+						<p>
+							Aflevering 04.01.01
+						</p>
+						<br>
+						<img src="elements/check.svg" class="icon">
+						<p><small>
+							User brief
+						</small></p>
+					</a>
 				</div>
 
 			</div>
 		</div>
 
-	</div>
-
+	</main>
 	<script src="script.js"></script>
 </body>
 
