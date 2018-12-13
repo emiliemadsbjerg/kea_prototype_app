@@ -906,3 +906,58 @@ input[type=submit] {
 .stefanscircle{
     width: 20px;
 }
+
+/*Feedback site*/
+
+.afleveret_dato {
+    width: 100%;
+    text-align: right;
+}
+
+
+.afleveret_dato_tekst {
+    width: 50%;
+    background-color: #eaeaea;
+    color: #EB6D64;
+    display: flex;
+    box-shadow: 0 8px 10px -3px #d0d0d0;
+    border-radius: 1000vw;
+    margin: 2vw;
+
+}
+
+.person {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 16px;
+}
+
+.contact_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_icon .contact {
+    margin: 0;
+}
+
+.contact_icon p {
+    color: black;
+    margin: 3px 0 0 0;
+}
+
+.feedback_tekst,
+.afleveret_af {
+    background-color: #EB6D64;
+    color: white;
+}
+
+.feedback_tekst {
+    /*padding-bottom: 25vw;*/
+}
+
+.status {
+    background-color: #F29D96;
+    color: white;
+}
